@@ -1,0 +1,706 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#"
+     xml:base="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasBlock -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasBlock">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ReflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Blockchain"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Block"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasCreator -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasCreator">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasExchange -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasExchange">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyExchange"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasICO -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasICO">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#InitialCoinOffering"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasMarketData -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasMarketData">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyMarket"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasMarketPair -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasMarketPair">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasMiningHardware -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasMiningHardware">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MiningHardware"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasMiningPool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasMiningPool">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Mining"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MiningPool"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasOwner -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasOwner">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasRegulation -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasRegulation">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyRegulation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasTokenContract -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasTokenContract">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Token"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasTransaction -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasTransaction">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Transaction"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasWallet -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasWallet">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Wallet"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasDate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasDate">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Transaction"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasDifficulty -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasDifficulty">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Mining"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasMarketCapitalization -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasMarketCapitalization">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasPrice -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasPrice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasReward -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasReward">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Mining"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasSupply -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasSupply">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasVolume -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#hasVolume">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#AntiMoneyLaundering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#AntiMoneyLaundering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyRegulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Bitcoin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Bitcoin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Block -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Block">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Blockchain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Blockchain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Blockchain"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ByzantineFaultTolerance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ByzantineFaultTolerance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ConsensusAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CentralizedExchange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CentralizedExchange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyExchange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ConsensusAlgorithm -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ConsensusAlgorithm"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyExchange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyExchange"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyMarket -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyMarket"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyRegulation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyRegulation"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#DecentralizedExchange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#DecentralizedExchange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyExchange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#DelegatedProofOfStake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#DelegatedProofOfStake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ConsensusAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#DistributedLedger -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#DistributedLedger">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Blockchain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Ethereum -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Ethereum">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#HardwareWallet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#HardwareWallet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Wallet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ICOPlatform -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ICOPlatform">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#InitialCoinOffering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#InitialCoinOffering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#InitialCoinOffering"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#KnowYourCustomer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#KnowYourCustomer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyRegulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#LegalCompliance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#LegalCompliance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyRegulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Litecoin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Litecoin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MarketCapitalization -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MarketCapitalization">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyMarket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MarketTrends -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MarketTrends">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyMarket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Mining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Mining"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MiningDifficulty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MiningDifficulty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Mining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MiningHardware -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MiningHardware">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Mining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MiningPool -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MiningPool">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Mining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MiningReward -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#MiningReward">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Mining"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Non-fungibleToken_NFT -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Non-fungibleToken_NFT">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Token"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Over-the-CounterExchange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Over-the-CounterExchange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyExchange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#PaperWallet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#PaperWallet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Wallet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Peer-to-PeerExchange -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Peer-to-PeerExchange">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyExchange"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#PriceVolatility -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#PriceVolatility">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyMarket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ProofOfStake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ProofOfStake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ConsensusAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ProofOfWork -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ProofOfWork">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#ConsensusAlgorithm"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Ripple -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Ripple">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Cryptocurrency"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#SecurityToken -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#SecurityToken">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Token"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#SmartContract -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#SmartContract">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Blockchain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#SoftwareWallet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#SoftwareWallet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Wallet"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Stablecoin -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Stablecoin">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Token"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Taxation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Taxation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyRegulation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Token -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Token"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#TokenDistribution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#TokenDistribution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#InitialCoinOffering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#TokenEconomics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#TokenEconomics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#InitialCoinOffering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#TokenSale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#TokenSale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#InitialCoinOffering"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#TradingVolume -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#TradingVolume">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#CryptocurrencyMarket"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Transaction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Transaction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Blockchain"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#UtilityToken -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#UtilityToken">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Token"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Wallet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Wallet"/>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#WebWallet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#WebWallet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Wallet"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Hardware_wallet_of_Simon -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Hardware_wallet_of_Simon">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#HardwareWallet"/>
+        <hasOwner rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Hardware_wallet_of_Simon"/>
+        <hasDate></hasDate>
+        <hasPrice></hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Paper_wallet_of_Alice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Paper_wallet_of_Alice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#PaperWallet"/>
+        <hasWallet rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#Paper_wallet_of_Alice"/>
+        <hasDate></hasDate>
+        <hasPrice></hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#SoftwareWallet_John -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#SoftwareWallet_John">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#SoftwareWallet"/>
+        <hasWallet rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#SoftwareWallet_John"/>
+        <hasDate></hasDate>
+        <hasPrice></hasPrice>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#WebWallet_Ahmed -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#WebWallet_Ahmed">
+        <rdf:type rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#WebWallet"/>
+        <hasWallet rdf:resource="http://www.semanticweb.org/user/ontologies/2023/5/untitled-ontology-14#WebWallet_Ahmed"/>
+        <hasDate></hasDate>
+        <hasPrice></hasPrice>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
